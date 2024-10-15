@@ -3,8 +3,8 @@
 if __name__ == '__main__':
     print("Hello, World!")
 
-This Python code snippet is using the if __name__ == '__main__': construct to 
-    control when a particular block of code is executed.
+# This Python code snippet is using the if __name__ == '__main__': construct to 
+#     control when a particular block of code is executed.
 
 # Here's how it works:
 
