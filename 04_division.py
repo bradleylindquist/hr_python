@@ -7,3 +7,5 @@
 a = 3
 b = 5
 print(a//b, a/b, sep='\n')
+
+# print() has a possible sep argument that we can set to be a line break \n.
