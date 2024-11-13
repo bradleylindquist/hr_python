@@ -1,8 +1,9 @@
+# You are given a string and your task is to swap cases. 
+# In other words, convert all lowercase letters to uppercase letters and vice versa.
 
+# I used a while loop 
 
 s = 'HackerRank.com presents "Pythonist 2".'
-
-
 
 empty = []
 i = 0
