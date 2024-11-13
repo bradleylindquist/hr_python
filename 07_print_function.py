@@ -3,7 +3,7 @@
 
 # Note that "..." represents the consecutive values in between.
 
-n = 5
+n = 21
 
 count = '1'
 i = 2
