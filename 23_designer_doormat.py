@@ -7,10 +7,16 @@
 n = 11
 m = 3*n
 
+
+# top half (n / 2 minus 1 rows)
 for i in range(n//2):
     j = int((2*i)+1)
     print(('.|.'*j).center(m, '-'))
+
+# middle row including 'WELCOME' (1 line)
 print('WELCOME'.center(m,'-'))
+
+# bottom half (n / 2 minus 1 rows)
 for i in reversed(range(n//2)):
     j = int((2*i)+1)
     print(('.|.'*j).center(m, '-'))
