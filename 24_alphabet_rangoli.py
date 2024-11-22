@@ -14,14 +14,18 @@
 
 # ----------------------solution---------------------------
 
-n = 11
-m = 3*n
+def print_rangoli(size):
+    a = "abcdefghijklmnopqrstuvwxyz"
+    lines = []
+    for row in range(size):
+        print_ = "-".join(a[row:size])
+        lines.append(print_[::-1] + print_[1:])
+    width = len(lines[0])
+    
+    for row in range(size-1, 0, -1):
+        print(lines[row].center(width, '-'))
+        
+    for row in range(size):
+        print(lines[row].center(width, '-'))
 
-# top half (n / 2 minus 1 rows)
-for i in range(n//2):
-    j = int((2*i)+1)
-    print(('.|.'*j).center(m, '-'))
-
-N = 5
-
-print('a'.center((N - 1)**2 + 1, '-'))
+print_rangoli(6)
