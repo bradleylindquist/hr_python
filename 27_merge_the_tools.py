@@ -30,19 +30,21 @@
 string = "AABCAAADAMBA"  
 k = 3
 
-index = 0
-while index < len(string):
-    segment = string[index:index + k]  # Slice the string
-    # Maintain order of unique characters
-    unique_chars = "".join(dict.fromkeys(segment))  # Use dict.fromkeys to preserve order
-    print(unique_chars)
-    index += k
-
-
-# --------------opt-----------------------------
-
 def merge_the_tools(string, k):
     for i in range(0, len(string), k):
         segment = string[i:i + k]
         unique_chars = ''.join(char for i, char in enumerate(segment) if char not in segment[:i])
         print(unique_chars)
+
+merge_the_tools(string, k)
+
+# 1. Use of range with a Step Size:
+
+#     This removes the need for the index variable and simplifies the loop logic by 
+#     iterating directly over segment start indices.
+    
+#     The range function increments by k, naturally splitting the string into segments.
+
+# 2. unique_chars line
+#     This checks if a character has appeared earlier in the segment (segment[:i]) 
+        # and only includes it if it hasn't.
